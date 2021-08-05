@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="header heading row">
+        <div class="resume-header"><mat-icon>account_circle</mat-icon>{{header}}</div>
+        <div class="resume-header-text">{{headerText}}</div>
+        <hr>
+        <div class="row">
+            <div class="col-2"><mat-icon>smartphone</mat-icon>8939126635</div>
+            <div class="col-3"><mat-icon>email</mat-icon>mrkool.vinay@gmail.com</div>
+            <div class="col-7">https://www.linkedin.com/in/beesetti-vinay-kumar-ba1b0b44/</div>
+        </div>
+    </div>
+    <div class="resume-body row">
+        <div class="skills col-4">
+            <div *ngFor="let skill of mySkills">
+                <div class="heading heading-spacing">{{skill.skillType}}</div>
+                <div>
+                    <mat-list role="list">
+                        <mat-list-item role="listitem" *ngFor="let skillName of skill.skills" class="skill-name">
+                            <mat-icon>double_arrow</mat-icon>{{skillName}}
+                        </mat-list-item>
+                    </mat-list>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div>
+                <div class="exp-heading heading-spacing">Experience</div>
+                <div class="exp row" *ngFor="let exp of myExp">
+                    <div class="col-3"><span class="tenure">{{exp.tenure}}</span></div>
+                    <div class="col-9">
+                        <div class="row">
+                            <span class="designation">{{exp.designation}}</span>
+                            <br>
+                            <span class="company">{{exp.company}}</span>
+                        </div>
+                        <div class="row">
+                            <mat-list role="list">
+                                <mat-list-item role="listitem" class="role-resp" *ngFor="let respName of exp.resp">
+                                    <mat-icon>task_alt</mat-icon>{{respName}}
+                                </mat-list-item>
+                            </mat-list>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

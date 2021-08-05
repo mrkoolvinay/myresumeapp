@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.resume-body {
+    margin-top: 5px !important;
+}
+
+.heading {
+    background-color: #0277BD;
+    color: #E3F2FD;
+}
+
+.exp-heading {
+    background-color: #B0BEC5;
+    color: #0277BD;
+}
+
+.skills {
+    background-color: #B0BEC5;
+}
+
+.heading-spacing {
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -12px;
+    padding-left: 12px;
+    margin-right: -12px;
+    padding-right: 12px;
+    font-weight: 500;
+}
+
+.resume-header {
+    font-size: 24px !important;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.resume-header-text {
+    font-size: small !important;
+    padding-bottom: 10px;
+}
+
+.tenure {
+    font-weight: bold !important;
+}
+
+.designation {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 16px;
+}
+
+.role-resp {
+    font-size: 12px !important;
+}
+
+.exp {
+    padding-top: 15px;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+    padding: 0 !important;
+}
