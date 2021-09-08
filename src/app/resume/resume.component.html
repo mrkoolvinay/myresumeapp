@@ -3,10 +3,10 @@
         <div class="resume-header"><mat-icon>account_circle</mat-icon>{{header}}</div>
         <div class="resume-header-text">{{headerText}}</div>
         <hr>
-        <div class="row">
+        <div class="row resume-header-text">
             <div class="col-2"><mat-icon>smartphone</mat-icon>8939126635</div>
             <div class="col-3"><mat-icon>email</mat-icon>mrkool.vinay@gmail.com</div>
-            <div class="col-7">https://www.linkedin.com/in/beesetti-vinay-kumar-ba1b0b44/</div>
+            <div class="col-7"><mat-icon>contact_page</mat-icon>https://www.linkedin.com/in/beesetti-vinay-kumar-ba1b0b44/</div>
         </div>
     </div>
     <div class="resume-body row">
@@ -26,8 +26,8 @@
             <div>
                 <div class="exp-heading heading-spacing">Experience</div>
                 <div class="exp row" *ngFor="let exp of myExp">
-                    <div class="col-3"><span class="tenure">{{exp.tenure}}</span></div>
-                    <div class="col-9">
+                    <div class="col-1 tenure-back"><span class="tenure">{{exp.tenure}}</span></div>
+                    <div class="col-11">
                         <div class="row">
                             <span class="designation">{{exp.designation}}</span>
                             <br>
@@ -40,9 +40,65 @@
                                 </mat-list-item>
                             </mat-list>
                         </div>
+                        <div class="row">
+                            <span class="project-header">Project(s):</span>
+                            <div *ngFor="let proj of exp.projs">
+                                <p><span class="project-name">{{proj.projName}}: </span>{{proj.projDesc}}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <div class="heading heading-spacing">Education</div>
+            <div>
+                VITAM College of Engineering (Affiliated to JNTU Kakinada) 2007-2011
+                <mat-list role="list">
+                    <mat-list-item role="listitem" class="role-resp">
+                        <mat-icon>task_alt</mat-icon>Pursued Bachelor of Technology (B. Tech) in Computer
+                        Science and Engineering with 72.79%
+                    </mat-list-item>
+                    <mat-list-item role="listitem" class="role-resp">
+                        <mat-icon>task_alt</mat-icon>As a student passionate towards coding and participating in
+                        College Tech Events.
+                    </mat-list-item>
+                </mat-list>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="heading heading-spacing">Other Achivements</div>
+            <mat-list role="list">
+                <mat-list-item role="listitem" class="role-resp">
+                    <mat-icon>task_alt</mat-icon>Received Rain Maker Award for the
+                    contributions toward the Project
+                </mat-list-item>
+                <mat-list-item role="listitem" class="role-resp">
+                    <mat-icon>task_alt</mat-icon>Received AD Innovator of the Month Award.
+                </mat-list-item>
+                <mat-list-item role="listitem" class="role-resp">
+                    <mat-icon>task_alt</mat-icon>Client appreciation for the automating the
+                    health check of applications.
+                </mat-list-item>
+            </mat-list>
+        </div>
+        <div class="col-3">
+            <div class="heading heading-spacing">Personal Interests</div>
+            <mat-list role="list">
+                <mat-list-item role="listitem" class="role-resp">
+                    <mat-icon>task_alt</mat-icon>Playing Cricket, Snooker and
+                    Table tennis
+                </mat-list-item>
+                <mat-list-item role="listitem" class="role-resp">
+                    <mat-icon>task_alt</mat-icon>Love watching movies and
+                    Foodie
+                </mat-list-item>
+                <mat-list-item role="listitem" class="role-resp">
+                    <mat-icon>task_alt</mat-icon>Loves to Code.
+                </mat-list-item>
+            </mat-list>
         </div>
     </div>
 </div>

@@ -49,6 +49,16 @@ export class ResumeComponent implements OnInit {
           'Design, develop, test and maintain the application working in an Agile environment',
           'Good exposure to Software craftsmanship practices like TDD and pair programming',
           'Involved in Agile ceremonies',
+        ],
+        projs: [
+          {
+            projName: 'HD Verify (US Regulatory)',
+            projDesc: 'Heavy Duty Verification (HD Verify) helps ford business to certify Heavy duty vehicles by submitting the Forcast and Actual Volumes reports to Govt. agencies (EPA and CARB). Helps and external system VDLS to print VECI and IEI labels for vehicles by providing appropriate data from HDVerify.'
+          },
+          {
+            projName: 'HnC Base Services',
+            projDesc: 'Homologate and Certify Base services is product level which helps to identify and create common solutions for all the product teams. For example, a common functionality in all the projects is created as an api as part of HnC Base services which helps in code reusability'
+          }
         ]
       },
       {
@@ -63,6 +73,20 @@ export class ResumeComponent implements OnInit {
           'Setup Jenkins server for Continuous Integration',
           'Built Chrome plug-ins for automated health check of applications for Application Management Team',
           'Supported Production Implementations'
+        ],
+        projs: [
+          {
+            projName: 'CO2FEC(WLTP Program)',
+            projDesc: 'CO2 and FE calculator for is a regulatory project which helps the business to calculate and emission values of the vehicle which are between lowest and highest configuration. This project is part of WLTP (World harmonized Light-duty vehicles Test Procedure) is a global harmonized standard for determining the levels of pollutants, CO2 emissions and fuel consumption of vehicles'
+          },
+          {
+            projName: 'GERF',
+            projDesc: 'Global Emission Reporting and Forecasting is for the EU region where the forect and actual vehicles of EU region are reported to the govt. agency for certification.'
+          },
+          {
+            projName: 'HD Verify (US Regulatory)',
+            projDesc: 'Heavy Duty Verification (HD Verify) helps ford business to certify Heavy duty vehicles by submitting the Forcast and Actual Volumes reports to Govt. agencies (EPA and CARB).'
+          },
         ]
       },
       {
@@ -73,6 +97,12 @@ export class ResumeComponent implements OnInit {
           'Responsible to gather requirements, Analysis, Coding, Unit Testing, Test Support and Production Implementation support',
           'Software Design, Coding and Unit Testing are the primary responsibility',
           'Maintenance and Enhancement of Core Banking Modules'
+        ],
+        projs: [
+          {
+            projName: 'Core Banking Application',
+            projDesc: 'This application helps Standard Chartered to edit, process and create customer details from the core banking systems'
+          }
         ]
       },
       {
@@ -83,6 +113,12 @@ export class ResumeComponent implements OnInit {
           'Responsible to gather requirements, Analysis, Coding, Unit Testing, Test Support and Production Implementation support',
           'Created a batch module using Spring framework',
           'Implemented Presentation Layer Components'
+        ],
+        projs: [
+          {
+            projName: 'SPA',
+            projDesc: 'Sales Processing Application helps John Hancock retirement plan services to create proposal forms and sent to the employers for confirmation.'
+          }
         ]
       }
     ]
